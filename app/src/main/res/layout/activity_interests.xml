@@ -10,4 +10,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.routengo1.presenter.InterestActivity">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/interest_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
 </RelativeLayout>
