@@ -19,7 +19,8 @@
         <activity android:name=".presenter.InterestActivity" />
         <activity android:name=".presenter.ObjectiveActivity" />
         <activity android:name=".presenter.ProximityActivity" />
-        <activity android:name=".presenter.PlaceActivity"></activity>
+        <activity android:name=".presenter.PlaceActivity" />
+        <activity android:name=".presenter.ResultActivity"></activity>
     </application>
 
 </manifest>
