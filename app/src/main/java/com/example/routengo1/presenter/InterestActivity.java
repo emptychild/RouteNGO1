@@ -21,13 +21,14 @@ public class InterestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interests);
 
-        recyclerView = (RecyclerView) findViewById(R.id.objective_view);
+        recyclerView = (RecyclerView) findViewById(R.id.interest_view);
 
         List<Item> items = Arrays.asList(
-                new Item("Достопримечательности", ""),
-                new Item("Красивые места", ""),
-                new Item("Шоппиг", ""),
-                new Item("Барный марафон", "")
+                new Item("Изобразительное искусство", ""),
+                new Item("Музыка", ""),
+                new Item("Спорт", ""),
+                new Item("История", ""),
+                new Item("Наука", "")
         );
 
         recyclerView.setHasFixedSize(true);
