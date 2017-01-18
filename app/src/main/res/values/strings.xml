@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RouteNGO1</string>
+    <string name="walk">Прогулка</string>
+    <string name="bypass_place">Прогуляйтесь достопримечательностям
+        или просто красивым местам</string>
+    <string name="visit_event">Посетить мероприятие</string>
+    <string name="long_visit">Единичное посещение</string>
+    <string name="plane">Запланируйте поход на ближайшее мероприятие,
+        которое будет интерсно именно вам.</string>
+    <string name="visit_place">Предполагает продолжительное пребывание внутри</string>
+    <string name="any">Составьте список из любых мест и событий</string>
+    <string name="free">Свободный режим</string>
+</resources>
