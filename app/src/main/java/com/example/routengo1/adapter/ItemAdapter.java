@@ -11,6 +11,8 @@ import com.example.routengo1.model.Item;
 
 import java.util.List;
 
+import io.reactivex.subjects.PublishSubject;
+
 
 /**
  * Created by megaman on 14.01.2017.
@@ -18,13 +20,19 @@ import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> {
     private List<Item> itemList;
+    private PublishSubject<Integer> subject;
 
     public ItemAdapter(List<Item> itemList) {
         this.itemList = itemList;
+        this.subject = PublishSubject.create();
     }
 
     public List<Item> getItemList() {
         return itemList;
+    }
+
+    public PublishSubject<Integer> getObservable() {
+        return subject;
     }
 
     @Override
@@ -38,6 +46,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
         Item item = itemList.get(position);
         holder.title.setText(item.getTitle());
         holder.description.setText(item.getDescription());
+        this.subject.onNext(position);
     }
 
     @Override

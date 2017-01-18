@@ -11,7 +11,8 @@
     tools:context="com.example.routengo1.presenter.ObjectiveActivity">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/objective_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
 </RelativeLayout>
