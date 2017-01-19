@@ -14,5 +14,5 @@
     <string name="no_result">Результата нет. Эта функция еще не реализрвана.</string>
     <string name="ignore">Ignore</string>
     <string name="enter_r">Введите радиус</string>
-    <string name="max_time_and_date">Введите предел времени</string>
+    <string name="max_time_and_date">Введите день, до которого искать</string>
 </resources>
