@@ -15,4 +15,5 @@
     <string name="ignore">Ignore</string>
     <string name="enter_r">Введите радиус</string>
     <string name="max_time_and_date">Введите день, до которого искать</string>
+    <string name="start">Нажмите, чтобы продолжить</string>
 </resources>
