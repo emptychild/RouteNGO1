@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.routengo1.R;
-import com.example.routengo1.model.Item;
+import com.example.routengo1.model.Unit;
 
 import java.util.List;
 
@@ -17,13 +17,13 @@ import java.util.List;
  */
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> {
-    private List<Item> itemList;
+    private List<Unit> itemList;
 
-    public ItemAdapter(List<Item> itemList) {
+    public ItemAdapter(List<Unit> itemList) {
         this.itemList = itemList;
     }
 
-    public List<Item> getItemList() {
+    public List<Unit> getItemList() {
         return itemList;
     }
 
@@ -35,7 +35,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Item item = itemList.get(position);
+        Unit item = itemList.get(position);
         holder.title.setText(item.getTitle());
         holder.description.setText(item.getDescription());
     }

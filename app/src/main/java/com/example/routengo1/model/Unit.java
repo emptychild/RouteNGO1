@@ -4,11 +4,11 @@ package com.example.routengo1.model;
  * Created by megaman on 18.01.2017.
  */
 
-public class Item {
+public class Unit {
     private String title;
     private String description;
 
-    public Item(String title, String description) {
+    public Unit(String title, String description) {
         this.title = title;
         this.description = description;
     }

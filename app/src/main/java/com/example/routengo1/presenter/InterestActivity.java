@@ -10,7 +10,7 @@ import android.widget.Button;
 
 import com.example.routengo1.R;
 import com.example.routengo1.adapter.ItemAdapter;
-import com.example.routengo1.model.Item;
+import com.example.routengo1.model.Unit;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,12 +30,12 @@ public class InterestActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        List<Item> items = Arrays.asList(
-                new Item("Изобразительное искусство", ""),
-                new Item("Музыка", ""),
-                new Item("Спорт", ""),
-                new Item("История", ""),
-                new Item("Наука", "")
+        List<Unit> items = Arrays.asList(
+                new Unit("Изобразительное искусство", ""),
+                new Unit("Музыка", ""),
+                new Unit("Спорт", ""),
+                new Unit("История", ""),
+                new Unit("Наука", "")
         );
         recyclerView.setAdapter(new ItemAdapter(items));
 

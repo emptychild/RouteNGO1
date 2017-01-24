@@ -4,10 +4,14 @@ package com.example.routengo1.model;
  * Created by megaman on 24.01.2017.
  */
 
-public class Event {
+public class Event extends Unit{
 
     private Place place;
     private Festival festival;
+
+    public Event(String title, String description) {
+        super(title, description);
+    }
 
     public Place getPlace() {
         return place;

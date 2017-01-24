@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.routengo1.R;
 import com.example.routengo1.adapter.ItemAdapter;
-import com.example.routengo1.model.Item;
+import com.example.routengo1.model.Unit;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,11 +21,11 @@ public class ObjectiveActivity extends AppCompatActivity {
         setContentView(R.layout.activity_objectives);
         recyclerView = (RecyclerView) findViewById(R.id.objective_view);
 
-        List<Item> items = Arrays.asList(
-                new Item("Достопримечательности", ""),
-                new Item("Красивые места", ""),
-                new Item("Шоппиг", ""),
-                new Item("Барный марафон", "")
+        List<Unit> items = Arrays.asList(
+                new Unit("Достопримечательности", ""),
+                new Unit("Красивые места", ""),
+                new Unit("Шоппиг", ""),
+                new Unit("Барный марафон", "")
         );
 
         recyclerView.setHasFixedSize(true);

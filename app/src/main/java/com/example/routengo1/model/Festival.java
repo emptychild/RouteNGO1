@@ -6,15 +6,10 @@ import java.util.List;
  * Created by megaman on 24.01.2017.
  */
 
-public class Festival{
+public class Festival extends EventUnit {
 
-    private List<Event> eventList;
 
-    public List<Event> getEventList() {
-        return eventList;
-    }
-
-    public void setEventList(List<Event> eventList) {
-        this.eventList = eventList;
+    public Festival(String title, String description, List<Event> eventList) {
+        super(title, description, eventList);
     }
 }
